@@ -8,13 +8,16 @@
 
     <LinearLayout
         android:id="@+id/layout1"
-        android:layout_width="414dp"
-        android:layout_height="223dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="1dp"
         android:background="#62E342"
         android:gravity="center"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="-2dp"
-        tools:layout_editor_absoluteY="1dp">
+        app:layout_constraintBottom_toTopOf="@+id/layout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/txt1"
@@ -40,18 +43,26 @@
 
     <LinearLayout
         android:id="@+id/layout2"
-        android:layout_width="413dp"
-        android:layout_height="261dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="1dp"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="-2dp"
-        tools:layout_editor_absoluteY="224dp"></LinearLayout>
+        app:layout_constraintBottom_toTopOf="@+id/layout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout1"></LinearLayout>
 
     <LinearLayout
         android:id="@+id/layout3"
-        android:layout_width="409dp"
-        android:layout_height="244dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
         android:background="#E32121"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="486dp"></LinearLayout>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout2"></LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
